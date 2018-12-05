@@ -1,0 +1,71 @@
+Configuration	firmware
+STM32CubeMX 	4.25.1
+Date	06/20/2018
+MCU	STM32L432KCUx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+I2C1	I2C	I2C1_SCL	PA9
+I2C1	I2C	I2C1_SDA	PA10
+RCC	BYPASS Clock Source	RCC_CK_IN	PA0
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN (PC14)
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT (PC15)
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14 (JTCK-SWCLK)
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13 (JTMS-SWDIO)
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+TIM1	PWM Generation CH1N	TIM1_CH1N	PA7
+TIM2	Internal Clock	TIM2_VS_ClockSourceINT	VP_TIM2_VS_ClockSourceINT
+TIM2	PWM Generation CH4	TIM2_CH4	PA3
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC14-OSC32_IN (PC14)	RCC_OSC32_IN	
+3	PC15-OSC32_OUT (PC15)	RCC_OSC32_OUT	
+6	PA0	RCC_CK_IN	MCO [High speed clock in]
+7	PA1	GPIO_Output	
+8	PA2	GPIO_Output	
+9	PA3	TIM2_CH4	LED_PWM_WHITE
+10	PA4	GPIO_Input	SENSOR_EOS
+11	PA5	GPIO_EXTI5	SENSOR_TRIG
+12	PA6	GPIO_Output	SENSOR_START
+13	PA7	TIM1_CH1N	SENSOR_CLK
+19	PA9	I2C1_SCL	
+20	PA10	I2C1_SDA	
+21	PA11	USB_DM	
+22	PA12	USB_DP	
+23	PA13 (JTMS-SWDIO)	SYS_JTMS-SWDIO	SWDIO
+24	PA14 (JTCK-SWCLK)	SYS_JTCK-SWCLK	SWCLK
+26	PB3 (JTDO-TRACESWO)	GPIO_Output	LD3 [Green]
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : firmware
+Project Folder : /home/harry/Dokumente/Development/Private/migration/drgreen/c12800ma-firmware
+Toolchain / IDE : Makefile
+Firmware Package Name and Version : STM32Cube FW_L4 V1.11.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

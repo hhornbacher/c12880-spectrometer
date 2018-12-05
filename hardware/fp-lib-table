@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name vssop10)(type KiCad)(uri "$(KIPRJMOD)/vssop10.pretty")(options "")(descr ""))
+  (lib (name gw-jclps2)(type KiCad)(uri "$(KIPRJMOD)/gw-jclps2.pretty")(options "")(descr ""))
+  (lib (name sfh4776)(type KiCad)(uri "$(KIPRJMOD)/sfh4776.pretty")(options "")(descr ""))
+  (lib (name we-744766920)(type KiCad)(uri "$(KIPRJMOD)/we-744766920.pretty")(options "")(descr ""))
+  (lib (name c12880ma_socket)(type KiCad)(uri "$(KIPRJMOD)/c12880ma_socket.pretty")(options "")(descr ""))
+  (lib (name via)(type KiCad)(uri "$(KIPRJMOD)/via.pretty")(options "")(descr ""))
+  (lib (name led-ocu-400)(type KiCad)(uri "$(KIPRJMOD)/led-ocu-400.pretty")(options "")(descr ""))
+)
